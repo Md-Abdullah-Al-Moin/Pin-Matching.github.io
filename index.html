@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pin Matching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Pin Matching</h1>
+    <!-- error/correction notification -->
+    <div class="e-c">
+    <div class="error" id="error">
+        <p > <span id="e-btn">x </span>Not match. Please try again.</p>
+    </div>
+    <div class="correct" id="correct">
+        <p ><span id="c-btn">x</span> Congrats match.</p>
+    </div>
+</div>
+    <div class="main">
+        <!-- pin generate box -->
+    <div class="random">
+    <input id="random-show" style="text-align: right;" type="text" placeholder="0">
+    <br>
+    <button id="random-btn">Pin generate</button>
+</div>
+    <!-- matching box -->
+    <div class="match ">
+        <input id="match-in" type="text" placeholder="0">
+        <br>
+            <ul>
+                <li onclick="getvalue('0')">0</li>
+            <li onclick="getvalue('1')">1</li>
+            <li onclick="getvalue('2')">2</li>
+            <li onclick="getvalue('3')">3</li>
+            <li onclick="getvalue('4')">4</li>
+            <li onclick="getvalue('5')">5</li>
+            <li onclick="getvalue('6')">6</li>
+            <li onclick="getvalue('7')">7</li>
+            <li onclick="getvalue('8')">8</li>
+            <li onclick="getvalue('9')">9</li>
+            <li id="back" class="back" onclick="back()">D</li>
+            <li onclick="nul()">C</li>
+        </ul>
+        <button id="match-btn">Match</button> 
+    </div>
+</div>
+
+    <script src="test.js">
+    </script>
+</body>
+</html>
