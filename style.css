@@ -56,9 +56,6 @@ span{
     margin-left: 5px;
 }
 
-.match{
- 
-}
 .match ul{
     display: grid;
     grid-template-columns: 20px 20px 20px;

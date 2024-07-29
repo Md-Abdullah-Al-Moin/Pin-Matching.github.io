@@ -37,7 +37,6 @@ mBtn.addEventListener('click',function(event){
 })
 
 //action correct notify (x) button for display none
-var time = setInterval()
 var cBtn = document.getElementById('c-btn');
 cBtn.addEventListener('click',function(event){
     document.getElementById('correct').style.display='none';  
